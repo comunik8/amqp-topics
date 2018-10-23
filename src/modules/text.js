@@ -1,5 +1,5 @@
-import Joi from "joi";
-import {generate} from "./utils";
+import Joi from 'joi';
+import {generate} from '../utils/utils';
 
 export default generate('text', {
   unresolved: {
@@ -9,6 +9,6 @@ export default generate('text', {
       direction: Joi.string().required(),
       from: Joi.string().required(),
       to: Joi.string().required(),
-    }).required()
+    }).required(),
   },
-})
+});

@@ -1,13 +1,13 @@
 {
   "name": "comunik8-events",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "repository": "https://github.com/comunik8/comunik8-events",
   "license": "MIT",
   "scripts": {
     "start": "gulp serve",
     "build": "gulp",
-    "deploy": "gulp && rm -rf dist/tests && yarn publish"
+    "deploy": "gulp && npm publish"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-rc.1",

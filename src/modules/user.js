@@ -1,5 +1,5 @@
 import Joi from 'joi';
-import {generate} from "./utils";
+import {generate} from '../utils/utils';
 
 const u = {
   active: Joi.boolean().required(),
@@ -20,6 +20,6 @@ export default generate('user', {
   update: u,
   updateAll: {
     updated: Joi.date().required(),
-    users: Joi.array().required()
+    users: Joi.array().required(),
   },
-})
+});

@@ -30,7 +30,7 @@ gulp.task('copy', done => {
 // Compile ES6 to ES5 and copy to dist
 gulp.task('babel', done => {
   gulp
-    .src([...paths.js, '!gulpfile.babel.js'], {base: '.'})
+    .src([...paths.js, '!gulpfile.babel.js'], {base: './src'})
     .pipe(plugins.newer('dist'))
     .pipe(plugins.babel())
     .pipe(gulp.dest('dist'))
